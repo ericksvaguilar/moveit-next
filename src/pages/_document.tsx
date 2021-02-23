@@ -1,3 +1,7 @@
+/**
+ * _document.tsx contains configs that belongs to the entire page, but just run one time - when the page is loaded.
+ */
+
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 
 export default class MyDocument extends Document {

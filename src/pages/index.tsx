@@ -1,4 +1,8 @@
 import { CompletedChallenges } from '../components/CompletedChallenges'
+/**
+ * Here we can put all the components to mount the page.
+ */
+
 import { Countdown } from '../components/Countdown'
 import { ExperienceBar } from '../components/ExperienceBar'
 import { Profile } from '../components/Profile'
