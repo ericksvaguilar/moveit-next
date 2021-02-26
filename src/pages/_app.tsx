@@ -10,9 +10,8 @@ import { ChallengesProvider } from '../contexts/ChallengesContext'
 function MyApp({ Component, pageProps }) {
   return (
     // If a context depends of another it goes inside the parent that it depends
-    <ChallengesProvider>
-      <Component {...pageProps} />
-    </ChallengesProvider>
+
+    <Component {...pageProps} />
   )
 }
 

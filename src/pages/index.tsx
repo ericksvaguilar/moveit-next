@@ -1,4 +1,6 @@
 import { CompletedChallenges } from '../components/CompletedChallenges'
+import { GetServerSideProps } from 'next'
+
 /**
  * Here we can put all the components to mount the page.
  */
@@ -12,28 +14,68 @@ import Head from 'next/head'
 import styles from '../styles/pages/Home.module.css'
 import { ChallengeBox } from '../components/ChallengeBox'
 import { CountdownProvider } from '../contexts/CountdownContext'
+import { ChallengesProvider } from '../contexts/ChallengesContext'
 
-export default function Home() {
+interface HomeProps {
+  level: number
+  currentExperience: number
+  challengesCompleted: number
+}
+
+export default function Home(props: HomeProps) {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Inicio | move.it</title>
-      </Head>
-      <ExperienceBar />
+    <ChallengesProvider
+      level={props.level}
+      currentExperience={props.currentExperience}
+      challengesCompleted={props.challengesCompleted}
+    >
+      <div className={styles.container}>
+        <Head>
+          <title>Inicio | move.it</title>
+        </Head>
+        <ExperienceBar />
 
-      {/* Countdown Context stay around the elements that are dependent */}
-      <CountdownProvider>
-        <section>
-          <div>
-            <Profile />
-            <CompletedChallenges />
-            <Countdown />
-          </div>
-          <div>
-            <ChallengeBox />
-          </div>
-        </section>
-      </CountdownProvider>
-    </div>
+        {/* Countdown Context stay around the elements that are dependent */}
+        <CountdownProvider>
+          <section>
+            <div>
+              <Profile />
+              <CompletedChallenges />
+              <Countdown />
+            </div>
+            <div>
+              <ChallengeBox />
+            </div>
+          </section>
+        </CountdownProvider>
+      </div>
+    </ChallengesProvider>
   )
+}
+
+/**
+ * Acess to Next.js (Node.js) back-end
+ * I can make external request here, so the SEO wil read the response
+ * of these request
+ * Before construct the interface Next.js will make the request, get the data
+ * and pass to the interface
+ *  */
+export const getServerSideProps: GetServerSideProps = async ctx => {
+  // API Call
+  // const user = {
+  //   level: 1,
+  //   currentExperience: 58,
+  //   challengesCompleted: 2,
+  // }
+  // console.log(user)
+
+  const { level, currentExperience, challengesCompleted } = ctx.req.cookies
+
+  return {
+    props: {
+      level: Number(level),
+      currentExperience: Number(currentExperience),
+      challengesCompleted: Number(challengesCompleted),
+    },
+  }
 }
