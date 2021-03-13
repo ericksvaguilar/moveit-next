@@ -1,6 +1,6 @@
-import { useContext, useEffect, useState } from 'react'
-import { CountdownContext } from '../contexts/CountdownContext'
-import styles from '../styles/components/Countdown.module.css'
+import React, { useContext } from 'react';
+import { CountdownContext } from '../contexts/CountdownContext';
+import styles from '../styles/components/Countdown.module.css';
 
 export function Countdown() {
   const {
@@ -10,10 +10,10 @@ export function Countdown() {
     isActive,
     startCountdown,
     resetCountdown,
-  } = useContext(CountdownContext)
+  } = useContext(CountdownContext);
 
-  const [minuteLeft, minuteRight] = String(minutes).padStart(2, '0').split('') // padStart correct numbers with 1 digite like '5' and add an '0' returning '05'
-  const [secondLeft, secondRight] = String(seconds).padStart(2, '0').split('') // split divide the 2 digits string in 2 array items ['0', '5']
+  const [minuteLeft, minuteRight] = String(minutes).padStart(2, '0').split(''); // padStart correct numbers with 1 digite like '5' and add an '0' returning '05'
+  const [secondLeft, secondRight] = String(seconds).padStart(2, '0').split(''); // split divide the 2 digits string in 2 array items ['0', '5']
 
   return (
     <div>
@@ -30,14 +30,14 @@ export function Countdown() {
       </div>
 
       {hasFinished ? (
-        <button disabled className={styles.countdownButton}>
+        <button type="button" disabled className={styles.countdownButton}>
           Ciclo encerrado
         </button>
       ) : (
         <>
           {isActive ? (
             <button
-              type='button'
+              type="button"
               className={`${styles.countdownButton} ${styles.countdownButtonActive}`}
               onClick={resetCountdown}
             >
@@ -45,7 +45,7 @@ export function Countdown() {
             </button>
           ) : (
             <button
-              type='button'
+              type="button"
               className={styles.countdownButton}
               onClick={startCountdown}
             >
@@ -55,5 +55,5 @@ export function Countdown() {
         </>
       )}
     </div>
-  )
+  );
 }

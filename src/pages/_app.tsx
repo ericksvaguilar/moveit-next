@@ -2,17 +2,17 @@
  * * _app.tsx contains all the structure that belongs to the entire site, like a header or a footer
  * * The global css belongs to the entire page, so that is why it's here.
  */
+import React from 'react';
+import type { AppProps } from 'next/app';
 
-import '../styles/global.css'
+import '../styles/global.css';
 
-import { ChallengesProvider } from '../contexts/ChallengesContext'
-
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }: AppProps) {
   return (
     // If a context depends of another it goes inside the parent that it depends
 
     <Component {...pageProps} />
-  )
+  );
 }
 
-export default MyApp
+export default MyApp;
