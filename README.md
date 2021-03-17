@@ -26,7 +26,7 @@ In the project directory:
 
 `npm install`
 
-`npm start`
+`npm run dev`
 
 ## License
 
