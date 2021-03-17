@@ -48,7 +48,7 @@ export function CountdownProvider({ children }: CountdownProviderProps) {
       setIsActive(false);
       startNewChallenge();
     }
-  }, [isActive, time]);
+  }, [isActive, startNewChallenge, time]);
 
   function resetCountdown() {
     clearTimeout(countdownTimeout);
