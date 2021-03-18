@@ -1,20 +1,22 @@
 import React from 'react';
 import { GetServerSideProps } from 'next';
 import Head from 'next/head';
-import { CompletedChallenges } from '../components/CompletedChallenges';
+import CompletedChallenges from '../components/CompletedChallenges';
+
+import { CountdownProvider } from '../contexts/CountdownContext';
+import { ChallengesProvider } from '../contexts/ChallengesContext';
 
 /**
  * Here we can put all the components to mount the page.
  */
 
-import { Countdown } from '../components/Countdown';
-import { ExperienceBar } from '../components/ExperienceBar';
-import { Profile } from '../components/Profile';
+import Countdown from '../components/Countdown';
+import ExperienceBar from '../components/ExperienceBar';
+import Profile from '../components/Profile';
+
+import ChallengeBox from '../components/ChallengeBox';
 
 import styles from '../styles/pages/Home.module.css';
-import { ChallengeBox } from '../components/ChallengeBox';
-import { CountdownProvider } from '../contexts/CountdownContext';
-import { ChallengesProvider } from '../contexts/ChallengesContext';
 
 interface HomeProps {
   level: number;
@@ -22,12 +24,16 @@ interface HomeProps {
   challengesCompleted: number;
 }
 
-export default function Home(props: HomeProps) {
+const Home = ({
+  level,
+  currentExperience,
+  challengesCompleted,
+}: HomeProps): JSX.Element => {
   return (
     <ChallengesProvider
-      level={props.level}
-      currentExperience={props.currentExperience}
-      challengesCompleted={props.challengesCompleted}
+      level={level}
+      currentExperience={currentExperience}
+      challengesCompleted={challengesCompleted}
     >
       <div className={styles.container}>
         <Head>
@@ -51,11 +57,11 @@ export default function Home(props: HomeProps) {
       </div>
     </ChallengesProvider>
   );
-}
+};
 
 /**
  * Acess to Next.js (Node.js) back-end
- * I can make external request here, so the SEO wil read the response
+ * I can make external request here, so the SEO will read the response
  * of these request
  * Before construct the interface Next.js will make the request, get the data
  * and pass to the interface
@@ -79,3 +85,5 @@ export const getServerSideProps: GetServerSideProps = async ctx => {
     },
   };
 };
+
+export default Home;
