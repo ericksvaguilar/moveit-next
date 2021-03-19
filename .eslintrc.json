@@ -3,6 +3,10 @@
     "browser": true,
     "es2021": true
   },
+  "globals": {
+    "node": "readonly",
+    "JSX":"readonly"
+  },
   "extends": [
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",

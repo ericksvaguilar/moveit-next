@@ -7,12 +7,12 @@ import type { AppProps } from 'next/app';
 
 import '../styles/global.css';
 
-function MyApp({ Component, pageProps }: AppProps) {
+const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
   return (
     // If a context depends of another it goes inside the parent that it depends
 
     <Component {...pageProps} />
   );
-}
+};
 
 export default MyApp;
