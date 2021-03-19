@@ -8,7 +8,6 @@
   <a href='#live-preview'>Live Preview</a> ·
   <a href='#technologies-used'>Technologies Used</a> ·
   <a href='#start-the-project'>Start the Project</a> ·
-  <a href='#contributors'>Contributors</a> ·
   <a href='#how-to-contribute'>How to contribute</a> ·
   <a href='#license'>License</a>
 </p>
@@ -29,28 +28,6 @@ In the project directory:
 `npm install`
 
 `npm run dev`
-
-## Contributors
-
-A big thanks to this group that made this product leave the field of idea and enter the app stores :)
-
-You are an awesome team! :)
-
-
-    <a href="https://github.com/ericksvaguilar">
-      <figure>
-        <img style="border-radius: 50%;" src="https://github.com/ericksvaguilar.png" width="100px;" alt="Erick Aguilar"/>
-        <figcaption><strong>Erick Aguilar</strong></figcaption>
-      </figure>
-    </a>
-
-    <a href="https://github.com/Guribeiro">
-      <figure>
-        <img style="border-radius: 50%;" src="https://github.com/Guribeiro.png" width="100px;" alt="Gustavo Dias"/>
-        <figcaption><strong>Gustavo Dias</strong></figcaption>
-      </figure>
-    </a>
-
 
 ## How to contribute
 
