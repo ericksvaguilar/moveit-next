@@ -36,24 +36,21 @@ A big thanks to this group that made this product leave the field of idea and en
 
 You are an awesome team! :)
 
-<ul style='display: flex; list-style: none'; flex-wrap: wrap>
-  <li>
+
     <a href="https://github.com/ericksvaguilar">
       <figure>
         <img style="border-radius: 50%;" src="https://github.com/ericksvaguilar.png" width="100px;" alt="Erick Aguilar"/>
         <figcaption><strong>Erick Aguilar</strong></figcaption>
       </figure>
     </a>
-  </li>
-  <li>
+
     <a href="https://github.com/Guribeiro">
       <figure>
         <img style="border-radius: 50%;" src="https://github.com/Guribeiro.png" width="100px;" alt="Gustavo Dias"/>
         <figcaption><strong>Gustavo Dias</strong></figcaption>
       </figure>
     </a>
-  </li>
-</ul>
+
 
 ## How to contribute
 
