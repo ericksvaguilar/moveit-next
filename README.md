@@ -1,4 +1,5 @@
-![Move.it Logo](public/favicon.png)
+<img style='center' src='public/favicon.png' alt='moveit logo'>
+
 <h1 align='center'>Move.it App</h1>
 
 <p align='center'>Project of the 4th Edition of the NextLevelWeek (React.js), the free programming event of RocketSeat.</p>
