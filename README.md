@@ -1,4 +1,4 @@
-<img style='center' src='public/favicon.png' alt='moveit logo'>
+<img align='center' src='public/favicon.png' alt='moveit logo'>
 
 <h1 align='center'>Move.it App</h1>
 
