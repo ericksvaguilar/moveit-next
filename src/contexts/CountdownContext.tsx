@@ -22,7 +22,7 @@ interface CountdownProviderProps {
 
 export const CountdownContext = createContext({} as CountdownContextData);
 
-let countdownTimeout: NodeJS.Timeout;
+let countdownTimeout: globalThis.NodeJS.Timeout;
 
 export function CountdownProvider({
   children,
