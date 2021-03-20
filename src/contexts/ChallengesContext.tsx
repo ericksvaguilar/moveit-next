@@ -34,7 +34,7 @@ export const ChallengesContext = createContext({} as ChallengesContextData);
 export function ChallengesProvider({
   children,
   ...rest
-}: ChallengesProviderProps) {
+}: ChallengesProviderProps): JSX.Element {
   const [level, setLevel] = useState(rest.level ?? 1);
   const [currentExperience, setCurrentExperience] = useState(
     rest.currentExperience ?? 0,
