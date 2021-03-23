@@ -25,7 +25,15 @@ See the layout on Figma:
 
 ### Desktop
 
-<img src='public/img/Login.png' alt='login' width='768px'>
+<img src='public/img/login.png' alt='login' width='768px'>
+
+<img src='public/img/home.png' alt='home' width='768px'>
+
+<img src='public/img/home-ciclo-iniciado.png' alt='home ciclo iniciado' width='768px'>
+
+<img src='public/img/home-ciclo-encerrado.png' alt='home ciclo encerrado' width='768px'>
+
+<img src='public/img/leaderboard.png' alt='leaderboard' width='768px'>
 
 
 
