@@ -21,7 +21,11 @@ https://moveit-next-chi-five.vercel.app/
 
 ## Layout
 
+See the layout on Figma: 
+
 ### Desktop
+
+[public/img/Login.png]
 
 
 
