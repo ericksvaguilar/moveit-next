@@ -25,7 +25,7 @@ See the layout on Figma:
 
 ### Desktop
 
-[public/img/Login.png]
+[] (public/img/Login.png)
 
 
 
