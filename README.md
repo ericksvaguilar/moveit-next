@@ -8,6 +8,7 @@
 
 <p align='center'>
   <a href='#live-preview'>Live Preview</a> ·
+  <a href='#layout'>Layout</a> ·
   <a href='#technologies-used'>Technologies Used</a> ·
   <a href='#start-the-project'>Start the Project</a> ·
   <a href='#how-to-contribute'>How to contribute</a> ·
@@ -17,6 +18,12 @@
 ## Live Preview
 
 https://moveit-next-chi-five.vercel.app/
+
+## Layout
+
+### Desktop
+
+
 
 ## Technologies Used
 
