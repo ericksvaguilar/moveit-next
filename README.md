@@ -4,7 +4,7 @@
 
 <p align='center'>Project of the 4th Edition of the NextLevelWeek (React.js), the free programming event of RocketSeat.</p>
 
-<h4 align='center'>Status: In Progress...</h4>
+<h4 align='center'>Status: 🚧 In Progress... 🚧</h4>
 
 <p align='center'>
   <a href='#live-preview'>Live Preview</a> ·
