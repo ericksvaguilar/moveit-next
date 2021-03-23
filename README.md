@@ -25,7 +25,7 @@ See the layout on Figma:
 
 ### Desktop
 
-[] (public/img/Login.png)
+<img src='public/img/Login.png' alt='login'>
 
 
 
