@@ -21,7 +21,7 @@ https://moveit-next-chi-five.vercel.app/
 
 ## Layout
 
-See the layout on Figma: 
+See the layout on [Figma](https://www.figma.com/file/TlaDaCVBV5ZUxXBzey5gzJ/Move.it-2.0-(Copy)?node-id=160%3A2761) 
 
 ### Desktop
 
