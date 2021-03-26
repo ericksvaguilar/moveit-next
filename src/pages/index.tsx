@@ -15,7 +15,7 @@ const Login = (): JSX.Element => {
         <div>
           <h1>Bem-vindo</h1>
 
-          <div>
+          <div className={styles.githubMessage}>
             <img src="img/github.svg" alt="github" />
             <p>Faca login com seu Github para comecar</p>
           </div>
