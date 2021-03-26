@@ -1,7 +1,7 @@
 import React from 'react';
 import { GetServerSideProps } from 'next';
 import Head from 'next/head';
-import CompletedChallenges from '../../components/CompletedChallenges';
+import CompletedChallenges from '../../components/challenge/CompletedChallenges';
 
 import { CountdownProvider } from '../../contexts/CountdownContext';
 import { ChallengesProvider } from '../../contexts/ChallengesContext';
@@ -10,11 +10,11 @@ import { ChallengesProvider } from '../../contexts/ChallengesContext';
  * Here we can put all the components to mount the page.
  */
 
-import Countdown from '../../components/Countdown';
-import ExperienceBar from '../../components/ExperienceBar';
-import Profile from '../../components/Profile';
+import Countdown from '../../components/challenge/Countdown';
+import ExperienceBar from '../../components/challenge/ExperienceBar';
+import Profile from '../../components/challenge/Profile';
 
-import ChallengeBox from '../../components/ChallengeBox';
+import ChallengeBox from '../../components/challenge/ChallengeBox';
 
 import styles from '../../styles/pages/Home.module.css';
 
