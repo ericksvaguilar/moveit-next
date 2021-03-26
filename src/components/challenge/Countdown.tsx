@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
-import { CountdownContext } from '../contexts/CountdownContext';
-import styles from '../styles/components/Countdown.module.css';
+import { CountdownContext } from '../../contexts/CountdownContext';
+import styles from '../../styles/components/challenge/Countdown.module.css';
 
 const Countdown: React.FC = () => {
   const {
