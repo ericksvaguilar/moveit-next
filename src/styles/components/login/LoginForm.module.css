@@ -1,0 +1,30 @@
+.loginFormContainer form {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+}
+
+.loginFormContainer input {
+  border: none;
+
+  font-size: 1.25rem;
+
+  width: 21.25rem;
+  height: 100%;
+
+  padding-left: 1.895rem;
+
+  background: linear-gradient(90deg, #4953b8 0%, rgba(73, 83, 184, 0.2) 100%);
+}
+
+.loginFormContainer input::placeholder {
+  color: #b2b9ff;
+}
+
+.loginFormContainer button {
+  border: none;
+
+  height: 100%;
+  width: 5rem;
+  background-color: var(--blue-dark);
+}
