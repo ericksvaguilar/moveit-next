@@ -1,0 +1,16 @@
+.loginContainer {
+  background-color: #5965e0;
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+}
+
+.simbolo {
+  width: 48rem;
+}
+
+.logo {
+  display: block;
+  width: 22.5rem;
+}
